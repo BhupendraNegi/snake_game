@@ -3,6 +3,7 @@ require_relative 'game'
 
 set :public_folder, File.join(File.dirname(__FILE__), 'public')
 set :server, 'webrick'
+set :static, true
 
 snake_game = SnakeGame.new(20, 20, 20)
 
