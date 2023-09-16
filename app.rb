@@ -15,3 +15,7 @@ get '/api/move/:direction' do
   snake_game.move(direction)
   { snake: snake_game.snake, food: snake_game.food, game_over: snake_game.game_over }.to_json
 end
+
+get '/api/move/init' do
+  { snake: snake_game.snake, food: snake_game.food, game_over: snake_game.game_over }.to_json
+end
